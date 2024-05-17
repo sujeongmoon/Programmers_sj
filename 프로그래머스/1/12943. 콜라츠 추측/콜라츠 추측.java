@@ -14,6 +14,7 @@ class Solution {
             if (num % 2 == 0) {
                 num /= 2;
             } else if (num % 2 == 1) {
+                //else로는 안되는 이유가 뭘까 -> 음수 overflow때문인 듯
                 num *= 3;
                 num += 1;
             }
